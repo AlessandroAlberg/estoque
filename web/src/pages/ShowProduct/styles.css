@@ -1,0 +1,108 @@
+#page-show-product {
+    width: 100%;
+    max-width: 1100px;
+  
+    margin: 0 auto;
+}
+  
+#page-show-product header {
+    margin-top: 48px;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page-show-product header .logo {
+    display: flex;
+}
+
+#page-show-product header .logo .title {
+    font-size: 48px;
+    color: #2FB86E;
+    align-self: flex-end;
+    margin-left: 18px;
+}
+  
+#page-show-product header a {
+    color: var(--title-color);
+    font-weight: bold;
+    text-decoration: none;
+  
+    display: flex;
+    align-items: center;
+}
+  
+#page-show-product header a svg {
+    margin-right: 16px;
+    color: var(--primary-color);
+}
+  
+#page-show-product .content {
+    margin: 80px auto;
+    padding: 64px;
+    max-width: 730px;
+    background: #FFF;
+    border-radius: 8px;
+  
+    display: flex;
+    flex-direction: column;
+}
+
+#page-show-product .content .head {
+    display: flex;
+    justify-content: space-between;
+}  
+
+#page-show-product .content .head a {
+    width: 100%;
+    max-width: 130px;
+    height: 42px;
+    background: var(--primary-color);
+    border-radius: 8px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+#page-show-product .content .head a strong {
+    font-size: 14px;
+    flex: 1;
+    text-align: center;
+    color: #FFF;
+}
+  
+#page-show-product .content .head a:hover {
+    background: #2FB86E;
+}
+
+#page-show-product .content .head h1 {
+    font-size: 32px;
+}
+
+#page-show-product .content table {
+    margin-top: 3%;
+}
+
+#page-show-product .content table thead tr td {
+    font-weight: bold;
+}
+
+#page-show-product .content table tbody tr td p {
+    margin: 5px 0;
+}
+
+#page-show-product .content table tbody tr td button .btn-update {
+    text-align: center;
+    background-color: #6C6C80;
+    padding: 10% 20%;
+    border-radius: 8px;
+    color: #FFF;
+}
+
+#page-show-product .content table tbody tr td button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
