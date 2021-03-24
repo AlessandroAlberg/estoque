@@ -28,12 +28,16 @@ const ShowProduct = ({dispatch}) => {
     
     async function handleDelete(id: number) {
         await api.delete(`products/${id}`);
-        let array = products;
         //@ts-ignore
-        const result = await array.findIndex(element => element.id === id);
-        const arrayResult = await array.splice(result, 1);
+        var array = [];
+        await products.forEach((element) => {
+            //@ts-ignore
+            if(element.id !== id) {
+                array.push(element);
+            }
+        });
         //@ts-ignore
-        await setProducts(arrayResult);
+        await setProducts(array);
         alert('Produto deletado!');
     }
 
